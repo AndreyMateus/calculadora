@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body>
+        <section class="container">
+            <h1 value="Calculadora"></h1>
+            <table class="table-calc">
+                <caption value="Calculadora"></caption>
+                <thead>
+                    <input type="text" class="display" placeholder="Digite um valor">
+                    <tr>
+                        <th colspan="2"><button type="button" class="btn-func btn-clear">CE</button></th>
+                        <th colspan="2"><button type="button" class="btn-func remove-last-number"
+                                value="Backspace">&LeftArrow;</button>
+                        </th>
+                    </tr>
+                    <tr class="line-table">
+                        <th><button type="button" class="btn-calc">7</button></th>
+                        <th><button type="button" class="btn-calc">8</button></th>
+                        <th><button type="button" class="btn-calc">9</button></th>
+                        <th><button type="button" class="btn-calc">/</button></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="line-table">
+                        <td><button type="button" class="btn-calc">4</button></td>
+                        <td><button type="button" class="btn-calc">5</button></td>
+                        <td><button type="button" class="btn-calc">6</button></td>
+                        <td><button type="button" class="btn-calc">*</button></td>
+                    </tr>
+                    <tr class="line-table">
+                        <td><button type="button" class="btn-calc">1</button></td>
+                        <td><button type="button" class="btn-calc">2</button></td>
+                        <td><button type="button" class="btn-calc">3</button></td>
+                        <td><button type="button" class="btn-calc">-</button></td>
+                    </tr>
+                    <tr class="line-table">
+                        <td><button type="button" class="btn-calc">,</button></td>
+                        <td><button type="button" class="btn-calc">0</button></td>
+                        <td><button type="button" class="btn-calc">00</button></td>
+                        <td><button type="button" class="btn-calc">+</button></td>
+                    </tr>
+                    <tr class="line-table">
+                        <td colspan="4"><button type="button" class="btn-func btn-result" value="Enter">=</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer class="footer">
+            <p><a href="https://github.com/AndreyMateus" target="_blank">Feito por Andrey Mateus</a></p>
+        </footer>
+        <script src="./assets/js/main.js"></script>
+    </body>
+
+</html>

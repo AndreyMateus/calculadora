@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'JetBrains Mono';
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #000;
+    border: 1px solid #000;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.display {
+    padding: 0.2em 0.2em;
+    font-size: 3em;
+    background-color: bisque;
+    text-align: center;
+    outline: none;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.display::placeholder {
+    color: #000;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.display:focus {
+    box-shadow: 0 0 10px #000;
+}
+
+.table-calc {
+    background-color: antiquewhite;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+th,
+td {
+    max-width: 1.2em;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.btn-calc {
+    border: none;
+    text-align: center;
+    font-size: 4.2em;
+    padding: 0.1em;
+    width: 100%;
+    background-color: antiquewhite;
+    transition: all 100ms ease-in-out;
+}
+
+.btn-func {
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    font-size: 3em;
+    padding: 0.1em;
+    width: 1.2em;
+    background-color: bisque;
+    transition: all 100ms ease-in-out;
+}
+
+.btn-func:active {
+    background-color: azure;
+}
+
+.btn-result {
+    width: 100%;
+    background-color: bisque;
+}
+
+.btn-func {
+    width: 100%;
+}
+
+.btn-calc:active {
+    background-color: azure;
+}
+
+.btn-clicado {
+    background-color: azure;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    text-align: center;
+    background-color: aqua;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    text-shadow: 0 0 5px #000;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #f00;
+}
+
+/* MEDIA QUERIES HERE */
+@media (min-width: 1025px) {
+
+    body {
+        background-color: grey;
+    }
+
+    .container {
+        max-width: 60%;
+        border: none;
+        box-shadow: none;
+    }
+
+    .display {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 3em;
+    }
+}
