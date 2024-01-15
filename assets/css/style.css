@@ -40,7 +40,7 @@ h1 {
 .display::placeholder {
     color: #000;
     font-size: 0.8em;
-    font-weight: bold;
+    opacity: 50%;
 }
 
 .display:focus {
@@ -104,7 +104,8 @@ td {
 }
 
 .footer {
-    position: fixed;
+    margin-top: 0.5em;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
